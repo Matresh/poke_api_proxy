@@ -7,8 +7,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-import poke_api.poke_api_proxy.PokeApiRestService;
-import poke_api.poke_api_proxy.NamedAPIResourceList;
+import poke_api.poke_api_proxy.poke_api.PokeApiRestService;
+import poke_api.poke_api_proxy.poke_api.NamedAPIResourceList;
 
 @Controller
 public class PokemonInfoController {

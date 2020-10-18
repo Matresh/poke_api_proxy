@@ -1,4 +1,4 @@
-package poke_api.poke_api_proxy;
+package poke_api.poke_api_proxy.poke_api;
 
 import lombok.Getter;
 import lombok.Setter;
