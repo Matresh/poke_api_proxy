@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import poke_api.poke_api_proxy.PokeApiRestService;
+import poke_api.poke_api_proxy.NamedAPIResourceList;
 
 @Controller
 public class PokemonInfoController {
@@ -23,8 +24,8 @@ public class PokemonInfoController {
 
     @GetMapping(value = "/list")
     @ResponseBody
-    public String getPokeList(@RequestParam int limit,
-                              @RequestParam int offset){
+    public NamedAPIResourceList getPokeResourceList(@RequestParam int limit,
+                                                    @RequestParam int offset){
         LOGGER.info("list");
         return pokeService.getPokeList(limit, offset);}
 

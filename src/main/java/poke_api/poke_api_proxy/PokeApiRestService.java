@@ -10,8 +10,8 @@ public class PokeApiRestService {
     private String pokeListUrlBuilder(int limit, int offset){
         return API_URL + "?limit=" + limit + "&offset=" + offset;
     }
-    public String getPokeList(int limit, int offset) {
+    public NamedAPIResourceList getPokeList(int limit, int offset) {
         return this.restTemplate.getForObject(
-                pokeListUrlBuilder(limit, offset), String.class);
+                pokeListUrlBuilder(limit, offset), NamedAPIResourceList.class);
     }
 }
