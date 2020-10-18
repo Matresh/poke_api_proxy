@@ -2,6 +2,7 @@ package poke_api.poke_api_proxy.controllers;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -14,8 +15,8 @@ public class PokemonInfoController {
     
     // TODO READ HOW TO LOG IN SPRING
     private static final Logger LOGGER = LoggerFactory.getLogger(PokemonInfoController.class);
-    // TODO MAKE POKE SERVICE SPRING BEAN
-    private static final PokeApiRestService pokeService = new PokeApiRestService();
+    @Autowired
+    private PokeApiRestService pokeService;
     @GetMapping(value = "/info")
     @ResponseBody
     public String getInfo(){

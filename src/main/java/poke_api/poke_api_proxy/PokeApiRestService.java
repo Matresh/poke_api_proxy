@@ -1,7 +1,9 @@
 package poke_api.poke_api_proxy;
 
+import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+@Service
 public class PokeApiRestService {
     private final static String API_URL = "https://pokeapi.co/api/v2/pokemon";
     private final RestTemplate restTemplate = new RestTemplate();
