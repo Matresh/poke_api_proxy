@@ -1,4 +1,4 @@
-package poke_api.poke_api_proxy.poke_api;
+package poke_api.poke_api_proxy;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,5 +9,4 @@ public class PokeApiApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(PokeApiApplication.class, args);
 	}
-
 }

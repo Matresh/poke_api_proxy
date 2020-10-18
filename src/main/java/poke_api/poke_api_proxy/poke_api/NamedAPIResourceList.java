@@ -9,6 +9,6 @@ import lombok.Setter;
 @Getter
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class NamedAPIResourceList {
-    NamedAPIResource[] results;
+    public NamedAPIResource[] results;
 
 }
